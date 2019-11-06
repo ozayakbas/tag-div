@@ -99,3 +99,31 @@ header .container .search-box button{
 }
 /*Article Start!*/
 /*section  content start!*/
+article .content-bg {
+	background-image: url(img/zoom-17536689-3.jpg);
+	background-repeat: no-repeat;
+	height: 541px;
+	background-size: cover;
+	background-position: center;
+}
+article .content-bg .first-section{
+	width: 304px;
+	height: 313px;
+	background-color: white;
+	padding: 10px;
+	box-sizing: border-box;
+}
+article .content-bg .first-section .td-module a img{
+	display: inline-block;
+	width: 100%;
+}
+
+article .content-bg .first-section .td-module h3{
+	margin-top: 10px;
+}
+article .content-bg .first-section .td-module h3 a{
+	color: #111111;
+	font-size: 21px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 25px;
+}
