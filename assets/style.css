@@ -105,25 +105,50 @@ article .content-bg {
 	height: 541px;
 	background-size: cover;
 	background-position: center;
+	position: relative;
 }
-article .content-bg .first-section{
+article .content-bg .container .first-section{
 	width: 304px;
 	height: 313px;
 	background-color: white;
 	padding: 10px;
 	box-sizing: border-box;
+	display: inline-block;
+	position: absolute;
+	bottom: -96px;
 }
-article .content-bg .first-section .td-module a img{
+article .content-bg .container .first-section a img{
 	display: inline-block;
 	width: 100%;
 }
-
-article .content-bg .first-section .td-module h3{
+article .content-bg .container .first-section h3{
 	margin-top: 10px;
 }
-article .content-bg .first-section .td-module h3 a{
-	color: #111111;
-	font-size: 21px;
+article .content-bg .container .first-section h3 a{
+	color: #111;
+	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 	line-height: 25px;
+}
+article .content-bg .container .first-section .details .user-name {
+	color: #111;
+	font-size: 12px;
+	font-weight: 600;
+}
+article .content-bg .container .first-section .details .post-date{
+	color: #AAA;
+	font-size: 11px;
+	font-family: 'Open Sans', arial, sans-serif;
+}
+article .content-bg .container .first-section .details .comments{
+	float: right;
+	background: #111;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+}
+article .content-bg .container .first-section .details .comments a{
+	color: #fff;
+	font-weight: 600;
+	font-size: 10px;
 }
