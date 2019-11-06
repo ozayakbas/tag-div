@@ -99,6 +99,9 @@ header .container .search-box button{
 }
 /*Article Start!*/
 /*section  content start!*/
+body{
+	background-color: #fff;
+}
 article .content-bg {
 	background-image: url(img/zoom-17536689-3.jpg);
 	background-repeat: no-repeat;
@@ -108,46 +111,52 @@ article .content-bg {
 	position: relative;
 }
 article .content-bg .container .first-section{
+	position: absolute;
+	bottom:-103px;
+}
+article .content-bg .container .first-section .block-title {
+	background-color: white;
 	width: 304px;
 	height: 313px;
-	background-color: white;
-	padding: 10px;
-	box-sizing: border-box;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
 	display: inline-block;
-	position: absolute;
-	bottom: -96px;
+	padding: 10px;
+	margin-left: 23px;
 }
-article .content-bg .container .first-section a img{
+article .content-bg .container .first-section .block-title a img{
 	display: inline-block;
 	width: 100%;
 }
-article .content-bg .container .first-section h3{
+article .content-bg .container .first-section .block-title h3{
 	margin-top: 10px;
 }
-article .content-bg .container .first-section h3 a{
+article .content-bg .container .first-section .block-title h3 a{
 	color: #111;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 	line-height: 25px;
 }
-article .content-bg .container .first-section .details .user-name {
+article .content-bg .container .first-section .block-title h3 a:hover{
+	color: #4db2ec;
+}
+article .content-bg .container .first-section .block-title .details .user-name {
 	color: #111;
 	font-size: 12px;
 	font-weight: 600;
 }
-article .content-bg .container .first-section .details .post-date{
+article .content-bg .container .first-section .block-title .details .post-date{
 	color: #AAA;
 	font-size: 11px;
 	font-family: 'Open Sans', arial, sans-serif;
 }
-article .content-bg .container .first-section .details .comments{
+article .content-bg .container .first-section .block-title .details .comments{
 	float: right;
 	background: #111;
 	width: 18px;
 	height: 18px;
 	text-align: center;
 }
-article .content-bg .container .first-section .details .comments a{
+article .content-bg .container .first-section .block-title .details .comments a{
 	color: #fff;
 	font-weight: 600;
 	font-size: 10px;
