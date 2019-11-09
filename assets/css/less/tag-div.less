@@ -111,11 +111,11 @@ article .container-fluid {
 	position:relative;
 	z-index: -1;
 }
-article .first-row .top-col{
+article .first-row .top-row{
 	display: inline-block;
 	margin-top: -20.5%;
 }
-article .first-row .top-col .block-title {
+article .first-row .top-row .block-title {
 	background-color: white;
 	width: 304px;
 	height: 313px;
@@ -124,7 +124,7 @@ article .first-row .top-col .block-title {
 	padding: 10px;
 	margin: 0 24px;
 }
-article .first-row .top-col .block-title a img{
+article .first-row .top-row .block-title a img{
 	width: 100%;
 }
 .text-title{
@@ -165,21 +165,29 @@ article .first-row .top-col .block-title a img{
 	font-size: 10px;
 }
 /* section 2 start */ 
-article .second-row .sub-col{
+article .second-row .sub-rows{
 	display: inline-block;
 	margin-top: 48px;
+	position:relative;
 }
-article .second-row .sub-col .sub-cat{
+article .second-row .sub-rows::after{
+	content: "";
+	width: calc(100% - 48px);
+	border-top: 5px dashed #EBEBEB;
+	position:absolute;
+	top: 0;
+	bottom:0;
+	left: 0;
+	margin-left: 24px;
+}
+article .second-row .sub-rows:first-child:after{
+	border:none;
+}
+article .second-row .sub-rows .sub-cat{
 	height: 36px;
-	margin: 0 24px 16px 24px;
+	margin: 48px 24px 16px 24px;
 }
-article .second-row .border{
-	border-bottom:4px dashed #EBEBEB;
-	padding-bottom: 48px;
-	width: 1068px;
-	margin: 0 auto;
-}
-article .second-row .sub-col .sub-cat h4 {
+article .second-row .sub-rows .sub-cat h4 {
 	float: left;
 	font-family: "Sue Ellen Francisco";
 	font-size: 23px;
@@ -187,29 +195,27 @@ article .second-row .sub-col .sub-cat h4 {
 	font-weight: 600;
 	color: #21A4CE;
 }
-article .second-row .sub-col .sub-cat ul {
+article .second-row .sub-rows .sub-cat ul {
 
 }
-article .second-row .sub-col .sub-cat ul li{
+article .second-row .sub-rows .sub-cat ul li{
 	float: right;
 	margin-left: 30px;
 }
-article .second-row .sub-col .sub-cat ul li a{
+article .second-row .sub-rows .sub-cat ul li a{
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
 	color: #777;
 }
-article .second-row .sub-col .sub-block-title{
+article .second-row .sub-rows .sub-block-title{
 	width: 324px;
-	height: 318px;
 	float: left;
 	margin: 0 24px;
-
 }
-article .second-row .sub-col .sub-block-title .text-title {
+article .second-row .sub-rows .sub-block-title .text-title {
 	font-size: 21px;
 }
-article .second-row .sub-col .sub-block-title .desc{
+article .second-row .sub-rows .sub-block-title .desc{
 	margin-top: 9px;
 	font-size: 13px;
 	line-height: 22px;
