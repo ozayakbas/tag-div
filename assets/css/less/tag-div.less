@@ -233,20 +233,52 @@ footer {
 	background-position:bottom;
 
 }
-footer .container .footer-cat {
+footer .container .footer-row {
 	width:calc(33.333% - 48px );
 	margin: 54px 24px 20px 24px;
-	height: 150px;
-	background-color:red;
-	display: inline-block;
+	float: left;
 }
-footer .container .footer-cat .item-details .deneme h3 a{
+footer .container .footer-row .cat-name{
+	font-family: "Sue Ellen Francisco";
+	font-size: 23px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 10px;
+}
+footer .container .footer-row .footer-col{
+	padding-bottom: 26px;
+}
+footer .container .footer-row .footer-col .item-details .details{
+	width: 64%;
+	float: right;
+}
+footer .container .footer-row .footer-col .item-details .details h3 a{
 	color: #fff;
 	font-size: 14px;
 	line-height: 20px;
 	font-family: roboto,sans-serif;
+	font-weight: 400;
+	margin-bottom: 4px;
+	display: inline-block;
 }
-footer .container .footer-cat .item-details .deneme{
-	width: 65%;
+footer .container .footer-row .footer-col .item-details .details h3 a:hover{
+	color: #4db2ec;
+}
+footer .container .footer-row .popular-cat .aside li a .string,.number{
+	color: #fff;
+	font-size: 14px;
+	font-family: open sans,arial,sans-serif;
+}
+footer .container .footer-row .popular-cat .aside li{
+	clear: both;
+	line-height: 30px;
+}
+footer .container .footer-row .popular-cat .aside li a .string{
+	float: left;
+}
+footer .container .footer-row .popular-cat .aside li a .number{
 	float: right;
+}
+footer .container .footer-row .popular-cat .aside li a span:hover{
+	color: #4db2ec;
 }
