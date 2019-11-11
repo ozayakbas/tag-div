@@ -83,7 +83,8 @@ header .container nav a{
 	padding: 0 25px 0 0;
 }
 header .container nav a i{
-	font-size: 14px;
+	font-size: 13px;
+	margin-left:2px;
 }
 header .container nav a:first-child{
 	color: #1AA4CE;
@@ -234,11 +235,11 @@ footer {
 
 }
 footer .container .footer-row {
-	width:calc(33.333% - 48px );
+	width:calc(33% - 48px );
 	margin: 54px 24px 20px 24px;
-	float: left;
+	display: inline-block;
 }
-footer .container .footer-row .cat-name{
+footer .container .cat-name{
 	font-family: "Sue Ellen Francisco";
 	font-size: 23px;
 	font-weight: bold;
@@ -259,7 +260,6 @@ footer .container .footer-row .footer-col .item-details .details h3 a{
 	font-family: roboto,sans-serif;
 	font-weight: 400;
 	margin-bottom: 4px;
-	display: inline-block;
 }
 footer .container .footer-row .footer-col .item-details .details h3 a:hover{
 	color: #4db2ec;
@@ -270,15 +270,66 @@ footer .container .footer-row .popular-cat .aside li a .string,.number{
 	font-family: open sans,arial,sans-serif;
 }
 footer .container .footer-row .popular-cat .aside li{
-	clear: both;
 	line-height: 30px;
-}
-footer .container .footer-row .popular-cat .aside li a .string{
-	float: left;
 }
 footer .container .footer-row .popular-cat .aside li a .number{
 	float: right;
 }
 footer .container .footer-row .popular-cat .aside li a span:hover{
 	color: #4db2ec;
+}
+footer .container .footer-sub-img {
+	width: 231px;
+	padding: 24px;
+	display: inline-block;
+}
+footer .container .footer-sub-img img{
+	width: 231px;
+}
+footer .container .footer-sub-about{
+	width: 38%;
+	display: inline-block;
+	padding-left: 30px;
+}
+footer .container .footer-sub-about .about-details{
+	font-size: 14px;
+	line-height: 21px;
+	font-family: 'Open Sans', arial, sans-serif;
+	color: #fff;
+}
+footer .container .footer-sub-about  .about-details span{
+	color: #4db2ec;
+}
+footer .container .footer-sub-follow-us{
+	float: right;
+	padding-right: 12px;
+}
+footer .container .footer-sub-follow-us a i {
+	font-size: 19px;
+	color: #fff;
+	background-color:rgba(198,198,198, .1);
+	padding: 10px 10px;
+	margin-right: 10px;
+}
+footer .container .footer-sub-line::before{
+	content: "";
+	width: calc(80%);
+	border-top: 1px solid rgba(255,255,255, .1);
+	vertical-align: center;
+	display: inline-block;
+	margin: 30px 0 30px 110px;
+}
+.footer-copyright{
+	width: 100%;
+	height: 36px;
+	background-color: black;
+	clear: both;
+	position:static;
+	bottom:0;
+	top: 0;
+	left: 0;
+
+}
+.footer-copyright .container{
+	color: #fff;	
 }
