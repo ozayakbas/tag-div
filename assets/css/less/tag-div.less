@@ -68,7 +68,7 @@ header .container {
 	padding: 5.5px 24px;
 	box-sizing: border-box;
 }
-header .container a img{
+header .container a .top-logo{
 	float: left;
 }
 header .container nav{
@@ -100,7 +100,7 @@ header .container .search-box{
 	margin-right: 18px;
 
 }
-header .container .search-box button{
+header .container .search-box .fa-search{
 	color: #fff;
 	background: none;
 	font-size: 16px;
@@ -148,10 +148,11 @@ article .first-row .top-row .block-title a img{
 }
 .user-name {
 	color: #111;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: 600;
 	display: inline-block;
 	margin-top: 6px;
+	font-family: 'Open Sans', arial, sans-serif;
 }
 .post-date{
 	color: #AAA;
@@ -362,26 +363,66 @@ footer .container .footer-copyright .copyright-menu ul li a:hover{
 		height: 54px;
 		padding:0;
 		margin: 0;
-		text-align: center;
 	}
-	header .container nav{
+	header .container nav a{
 		display: none;
-	}
-	header a{
-		display: inline-block;
-
 	}
 	header .container nav .menu-bar{
+		color: #fff;
+		font-size: 25px;
 		display: inline-block;
-		color: red;
+	}
+	header .top-logo{
+		display: inline-block;
+		float: right;
+		width: 127px;
+
 	}
 	header .search-box{
-		display: none;
+		display: inline-block;
 	}
 	article .container{
 		width: 100%;
 	}
-	 footer .container {
+	article .first-row .top-row{
+		margin-top: -67%;
+	}
+	article .first-row .top-row .block-title{
+		width: 84%;
+		padding:10px;
+		margin: 20px 0 0 20px;
+	}
+	article .first-row .top-row h3 a{
+		font-family: sans-serif;
+	}
+	article .second-row .sub-rows{
+		margin:0;
+	}
+	article .second-row .sub-rows .sub-cat h4{
+		font-size: 19px;
+		display: inline-block;
+		margin-left: 10px;
+		margin-top: 5px;
+	}
+	article .second-row .sub-rows .sub-cat ul{
+		display: none;
+	}
+	article .second-row .sub-rows .sub-block-title{
+		width: 89.5%;
+		margin: 0 0 30px 20px;
+	}
+	article .second-row .sub-rows .sub-block-title img{
+		width: 335px;
+	}
+	footer .container {
 		width: 100%;
+		padding-top:40px;
+	}
+	footer .container .footer-row{
+		width: 90%;
+		padding: 0;
+		margin: 0 0 0 20px;
+	}
+	footer .container .footer-row .cat-name{
 	}
 }
