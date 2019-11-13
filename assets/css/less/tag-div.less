@@ -279,6 +279,17 @@ footer .container .footer-row .popular-cat .aside li a .number{
 footer .container .footer-row .popular-cat .aside li a span:hover{
 	color: #4db2ec;
 }
+footer .container .footer-sub-line{
+	text-align: center;
+}
+footer .container .footer-sub-line::before{
+	content: "";
+	width: calc(80%);
+	border-top: 1px solid rgba(255,255,255, .1);
+	display: inline-block;
+	margin:40px 0 40px 0;
+
+}
 footer .container .footer-sub-img {
 	width: 231px;
 	padding-left: 24px;
@@ -298,13 +309,10 @@ footer .container .footer-sub-about .about-details{
 	line-height: 21px;
 	font-family: 'Open Sans', arial, sans-serif;
 	color: #fff;
+	margin-top: 21px;
 }
 footer .container .footer-sub-about  .about-details span{
 	color: #4db2ec;
-}
-footer .container .footer-sub-about  .about-details span:last-child{
-	margin-top: 21px;
-	display: inline-block;
 }
 footer .container .footer-sub-follow-us{
 	float: right;
@@ -316,14 +324,6 @@ footer .container .footer-sub-follow-us a i {
 	background-color:rgba(198,198,198, .1);
 	padding: 10px 10px;
 	margin-right: 12px;
-}
-footer .container .footer-sub-line::before{
-	content: "";
-	width: calc(80%);
-	border-top: 1px solid rgba(255,255,255, .1);
-	vertical-align: center;
-	display: inline-block;
-	margin: 30px 0 30px 110px;
 }
 footer .footer-black-bg{
 	width: 100%;
@@ -423,6 +423,34 @@ footer .container .footer-copyright .copyright-menu ul li a:hover{
 		padding: 0;
 		margin: 0 0 0 20px;
 	}
-	footer .container .footer-row .cat-name{
+	footer .container .footer-sub-line{
+		text-align: center;
+	}
+	footer .container .footer-sub-line::before{
+		width: 84%;
+		margin: 0;
+		vertical-align: center;
+		margin: 40px 0 50px 0;
+	}
+	footer .container .footer-sub-img{
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	footer .container .footer-sub-img img{
+		width: 235px;
+		text-align: center;
+		margin: 0;
+	}
+	footer .container .footer-sub-about{
+		width: 90%;
+		padding: 0;
+		margin-left: 20px;
+		text-align: center;
+	}
+	footer .container .footer-sub-follow-us{
+		text-align: center;
+		margin-top: 40px;
 	}
 }
