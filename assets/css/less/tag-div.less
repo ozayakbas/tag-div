@@ -68,7 +68,7 @@ header .container {
 	padding: 5.5px 24px;
 	box-sizing: border-box;
 }
-header .container a .top-logo{
+header .container a{
 	float: left;
 }
 header .container nav{
@@ -359,10 +359,18 @@ footer .container .footer-copyright .copyright-menu ul li a:hover{
 
 @media screen and (max-width: 375px) {
 	header .container{
-		width: 100%;
+		width: 90%;
 		height: 54px;
 		padding:0;
+		margin-left: 19px;
+		position:relative:;
+	}
+	header .container nav{
+		display: inline-block;
 		margin: 0;
+		padding: 0;
+		position:absolute;
+		top: 15px;
 	}
 	header .container nav a{
 		display: none;
@@ -372,14 +380,26 @@ footer .container .footer-copyright .copyright-menu ul li a:hover{
 		font-size: 25px;
 		display: inline-block;
 	}
-	header .top-logo{
+	header .container a{
+		float: none;
 		display: inline-block;
-		float: right;
-		width: 127px;
-
+		text-align: center;
+		padding-top: 5px;
+		margin-left: 100px;
 	}
-	header .search-box{
+	header .container a .top-logo{
+		width: 127px;
+	}
+	header .container .search-box{
 		display: inline-block;
+		margin: 0;
+		padding-top: 20px;
+	}
+	header .container .search-box .fa{
+		display: inline-block;
+		font-size: 18px;
+		float: right;
+
 	}
 	article .container{
 		width: 100%;
@@ -416,7 +436,7 @@ footer .container .footer-copyright .copyright-menu ul li a:hover{
 	}
 	footer .container {
 		width: 100%;
-		padding-top:40px;
+		padding:40px 0 30px 0;
 	}
 	footer .container .footer-row{
 		width: 90%;
@@ -452,5 +472,30 @@ footer .container .footer-copyright .copyright-menu ul li a:hover{
 	footer .container .footer-sub-follow-us{
 		text-align: center;
 		margin-top: 40px;
+		float: none;
+		padding: 0;
+		width: 90%;
+		margin-left: 24px;
+	}
+	footer .footer-black-bg {
+		margin: 0;
+	}
+	footer .footer-black-bg .container {
+		width: 90%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	footer .footer-black-bg .container .footer-copyright{
+		line-height: 21px;
+		margin-top: 20px;
+		padding: 0;
+	}
+	footer .footer-black-bg .container .footer-copyright .copyright-menu{
+		float: none;
+		margin-bottom: 15px;
+	}
+	footer .footer-black-bg .container .footer-copyright .copyright-menu ul li{
+		margin-left: 10px;
 	}
 }
